@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="NL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="slideshow.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+<body class="bg-white">
+<header class="grid grid-rows-2 grid-cols-5 items-center justify-between bg-white ">
+    <div class="row-span-1 col-span-5 grid grid-cols-5 ">
+        <div class="col-span-2 flex justify-end items-end">
+            <img src="Image/logo.svg" alt="About Canon Logo" class="h-6 static">
+        </div>
+        <div class="col-span-3 flex pl-60 justify-center   items-center">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+                日本語
+            </a>
+            <img src="Image/globe.png" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4 h-10" alt="Globe">
+            <img src="Image/search.png" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4 h-8" alt="Search">
+        </div>
+    </div>
+
+    <nav class="row-span-2 col-span-5 flex justify-center items-center p-2">
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+            About Canon
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+            Our Business
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+            News
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+            Sustainability
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+            Investor Relations
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+            Technology
+        </a>
+    </nav>
+</header>
+
+<main id="slideshow" class="grid grid-cols-1 mx-auto relative">
+
+    <div id="image-1" class="image-container col-span-1 row-span-1 relative">
+        <img class="hidden col-span-2 row-span-2 w-full h-full object-cover" src="Image/Foto.jpg" alt="Background image 1">
+        <div class="buttons-container absolute bottom-0 left-0 right-0 flex items-left p-4 z-1 button-container">
+            <button id="prev-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded"><</button>
+            <button id="play-pause-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded">█</button>
+            <button id="next-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded">></button>
+        </div>
+        <div class="special-text hidden absolute bottom-0 right-0 bg-black text-white p-2 col-span-2 row-span-1 opacity-75 border border-top-16 border-[#BE000B] p-4">
+            <h3>New industry-oriented business group structure: Imaging Group</h3>
+            <p>Imaging is vital to future society. Canon's technology creates
+                new possibilities for enriched lives in a new era.
+            </p>
+            <br>
+        </div>
+    </div>
+    <div id="image-2" class="image-container col-span-1 row-span-1 relative">
+        <img class="hidden col-span-2 row-span-2 w-full h-full object-cover" src="Image/Printer.jpg" alt="Background image 2">
+        <div class="buttons-container absolute bottom-0 left-0 right-0 flex items-left p-4 z-1 button-container">
+            <button id="prev-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded"><</button>
+            <button id="play-pause-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded">█</button>
+            <button id="next-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded">></button>
+        </div>
+        <div class="special-text hidden absolute bottom-0 right-0 bg-black text-white p-2 col-span-2 row-span-1 opacity-75 border border-top-16 border-[#BE000B] p-4">
+            <h3>New industry-oriented business group structure: Imaging Group</h3>
+            <p>Imaging is vital to future society. Canon's technology creates
+                new possibilities for enriched lives in a new era.
+            </p>
+            <br>
+        </div>
+    </div>
+    <div id="image-3" class="image-container col-span-1 row-span-1 relative">
+        <img class="hidden col-span-2 row-span-2 w-full h-full object-cover" src="Image/Lab.jpg" alt="Background image 3">
+        <div class="buttons-container absolute bottom-0 left-0 right-0 flex items-left p-4 z-1 button-container">
+            <button id="prev-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded"><</button>
+            <button id="play-pause-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded">█</button>
+            <button id="next-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded">></button>
+        </div>
+        <div class="special-text hidden absolute bottom-0 right-0 bg-black text-white p-2 col-span-2 row-span-1 opacity-75 border border-top-16 border-[#BE000B] p-4">
+            <h3>New industry-oriented business group structure: Imaging Group</h3>
+            <p>Imaging is vital to future society. Canon's technology creates
+                new possibilities for enriched lives in a new era.
+            </p>
+            <br>
+        </div>
+    </div>
+    <div id="image-4" class="image-container col-span-1 row-span-1 relative">
+        <img class="hidden col-span-2 row-span-2 w-full h-full object-cover" src="Image/Hospital.jpg" alt="Background image 4">
+        <div class="buttons-container absolute bottom-0 left-0 right-0 flex items-left p-4 z-1 button-container">
+            <button id="prev-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded"><</button>
+            <button id="play-pause-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded">█</button>
+            <button id="next-btn" class="bg-[#BE000B] text-white px-4 py-2 rounded">></button>
+        </div>
+        <div class="special-text hidden absolute bottom-0 right-0 bg-black text-white p-2 col-span-2 row-span-1 opacity-75 border border-top-16 border-[#BE000B] p-4">
+            <h3>New industry-oriented business group structure: Imaging Group</h3>
+            <p>Imaging is vital to future society. Canon's technology creates
+                new possibilities for enriched lives in a new era.
+            </p>
+            <br>
+        </div>
+    </div>
+</main>
+
+<br>
+<footer class="bg-[#BE000B] text-white grid grid-cols-5 gap-4 font-robo">
+    <div class="col-span-2 bg-white h-2/3 text-black p-4 inline-grid">
+        <div class="pl-72 space-y-2 font-">
+            <h1 class="text-4xl grid-cols-2 font-bold">About Canon</h1>
+            <div class=" border-[#BE000B] border border-x border-top-width: 4px w-20"></div>
+            <p class="text-left font-robo">Canon is forging ahead toward grand.</p>
+            <p class="text-left font-robo">strategic transformation for new growth.</p>
+            <br>
+            <p class="text-[#BE000B]"><a href="LEARN_MORE_URL">Learn More &gt;</a></p>
+        </div>
+    </div>
+
+    <div>
+        <nav class="flex flex-col mt-8 space-y-2 text-sm text-white p-12">
+            <a href="CEO_MESSAGE_URL">CEO Message &gt;</a>
+            <a href="PHILOSOPHY_URL">Philosophy &gt;</a>
+            <a href="BUSINESS_STRATEGIES_URL">Business Strategies &gt;</a>
+            <a href="GRAND_STRATEGIC_TRANSFORMATION_URL">A Grand Strategic Transformation &gt;</a>
+            <a href="BASIC_INFO_URL">Basic Info &gt;</a>
+            <a href="MANAGEMENT_URL">Management &gt;</a>
+            <a href="LOCATIONS_URL">Locations &gt;</a>
+            <a href="ORGANIZATION_URL">Organization &gt;</a>
+            <a href="GROUP_DIRECTORY_URL">Group Directory &gt;</a>
+            <a href="HISTORY_URL">History &gt;</a>
+        </nav>
+    </div>
+    <div>
+        <nav class="flex flex-col mt-8 space-y-2 text-sm text-white p-12">
+            <a href="CANON_LOGO_URL">Canon Logo &gt;</a>
+            <a href="VIDEO_SQUARE_URL">Video Square &gt;</a>
+            <a href="PUBLICATIONS_URL">Publications &gt;</a>
+            <a href="COMMITMENT_TO_QUALITY_URL">Commitment to Quality &gt;</a>
+            <a href="MONOZUKURI_URL">Monozukuri &gt;</a>
+            <a href="DESIGN_URL">Design &gt;</a>
+            <a href="SPORTS_URL">Sports &gt;</a>
+            <a href="INTELLECTUAL_PROPERTY_URL">Intellectual Property &gt;</a>
+            <a href="PROCUREMENT_INFO_URL">Procurement Info &gt;</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
